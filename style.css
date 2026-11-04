@@ -1,0 +1,175 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    background-color: #222;
+    padding: 20px;
+}
+
+.header__container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    min-height: 450px;
+    background-color: #e9efff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero__content {
+    max-width: 600px;
+}
+
+.hero__title {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero__description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero__button {
+    display: inline-block;
+    background-color: #315efb;
+    color: white;
+
+    padding: 14px 28px;
+    border-radius: 5px;
+
+    text-decoration: none;
+}
+
+/* SERVICES */
+.services {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.services__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.services__container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 25px;
+}
+
+.services__card {
+    flex: 1;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.services__card-title {
+    margin-bottom: 15px;
+}
+
+.services__card-description {
+    line-height: 1.5;
+}
+
+/* CONTACT */
+.contact {
+    padding: 70px 20px;
+    background-color: #315efb;
+    color: white;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact__description {
+    margin-bottom: 25px;
+}
+
+.contact__button {
+    display: inline-block;
+    padding: 12px 25px;
+
+    background-color: white;
+    color: #315efb;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 25px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .header__container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services__container {
+        flex-direction: column;
+    }
+
+    .hero__title {
+        font-size: 32px;
+    }
+
+}
