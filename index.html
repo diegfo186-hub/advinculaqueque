@@ -1,28 +1,113 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Mi Landing Page</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-    <h1>My Website</h1>
-    </header>
-    <main>
-        <article>
-            <div class="text">
-                <h1>h119</h1>
-                <p>macaco</p>
-            </div>
-            <img src="img/01-macaque-selfie-naruto-indonesia.avif" alt="macaque" width="250" height="400">
-        </article>
-    </main>
-    <footer>
-        <div class="container">
-            <p class="footerP"></p>
-            <nav class="footerNAV"></nav>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
+
+            <a href="#" class="header__logo">MiMarca</a>
+
+            <nav class="header__nav">
+                <a href="#inicio" class="header__link">Inicio</a>
+                <a href="#servicios" class="header__link">Servicios</a>
+                <a href="#contacto" class="header__link">Contacto</a>
+            </nav>
+
         </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero__content">
+
+                <h1 class="hero__title">
+                    Creamos soluciones para tu futuro
+                </h1>
+
+                <p class="hero__description">
+                    Descubre nuestros servicios y lleva tus proyectos
+                    al siguiente nivel.
+                </p>
+
+                <a href="#servicios" class="hero__button">
+                    Conocer más
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services" id="servicios">
+
+            <h2 class="services__title">Nuestros servicios</h2>
+
+            <div class="services__container">
+
+                <article class="services__card">
+                    <h3 class="services__card-title">Diseño web</h3>
+                    <p class="services__card-description">
+                        Creamos páginas web modernas y atractivas.
+                    </p>
+                </article>
+
+                <article class="services__card">
+                    <h3 class="services__card-title">Desarrollo</h3>
+                    <p class="services__card-description">
+                        Desarrollamos soluciones digitales.
+                    </p>
+                </article>
+
+                <article class="services__card">
+                    <h3 class="services__card-title">Soporte</h3>
+                    <p class="services__card-description">
+                        Te acompañamos en cada etapa de tu proyecto.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contacto">
+
+            <h2 class="contact__title">¿Hablamos?</h2>
+
+            <p class="contact__description">
+                Estamos listos para ayudarte con tu próximo proyecto.
+            </p>
+
+            <a href="mailto:contacto@ejemplo.com" class="contact__button">
+                Contáctanos
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer__text">
+            © 2026 MiMarca. Todos los derechos reservados.
+        </p>
     </footer>
+
 </body>
+
 </html>
